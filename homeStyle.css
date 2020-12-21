@@ -1,0 +1,324 @@
+@import url('fontes/Roboto-Black.ttf');
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif; 
+    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+}
+.odooLogo{
+    max-height: 80px;
+    height: 60px;
+    width: 200px;
+    padding-top: 10px;
+}
+nav{
+    background: #A24689;
+}
+nav>ul{
+    display: flex;
+    justify-content: flex-start;
+    padding: 0;
+    margin: 0;
+    margin-top: -15px;
+}
+nav>ul>li{
+    padding: 20px 15px;
+}
+nav>ul>li:hover,.active{
+    background:#913f7b;
+}
+nav>ul>li>a{
+    color: white;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+main{
+   width: 1000px;
+    margin: auto;
+}
+.titleErp{
+    font-size: 50px;
+    margin: 0;
+    padding-top: 20px;
+}
+.imageErp{
+    padding-top: 30px;
+    padding-left: 50px;
+    width: 300px;
+}
+.imageErp > img {
+    width: 280px;
+}
+.imageErp > p,.imageCrm>p{
+    margin: auto;
+    width: 150px;
+}
+section{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+.blocErp{
+    width: 350px;
+    letter-spacing: 1px;
+    line-height: 1.2em;
+}
+.blocPratique{
+    width: 300px;
+    padding-left: 20px; 
+    padding-top: 10px;
+    letter-spacing: 1px;
+    line-height: 1.3em;
+}
+.blocPratique>.pratique{
+    font-size: 40px;
+    margin: 0;
+}
+.gras{
+    font-weight: bold;
+}
+.blocCrm{
+    margin-left:15px;
+    padding-top: 20px;
+}
+.titleCrm{
+    font-size: 40px;
+    margin: 0;
+    padding-top: 60px;
+}
+.imageCrm{
+    padding-top: 40px;
+    padding-left: 70px;
+    width: 300px;
+}
+.blocParagraphePratique{
+    margin-bottom: 0;
+}
+.souligner{
+    text-decoration: underline dotted;
+}
+footer{
+    background: #A24689;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+}
+.infosCrm{
+    padding-bottom: 60px;
+}
+@media screen and (max-width: 1000px) {
+    section{
+        flex-direction: column;
+        width: 100vh;
+        padding-left: 240px;
+    }
+    .titleErp{
+        padding-left: 240px;
+    }
+    .blocErp > p{
+        width: 310px;
+    }
+    .imageErp{
+        padding-left: 60px;
+    }
+    .titleCrm{
+        padding-left: 240px;
+    }
+    .blocCrm > p{
+        width: 300px;
+        margin-left: -15px;
+    }
+}
+@media screen and (max-width: 900px) {
+    main{
+        padding-left: 40px;
+    }
+    section{
+        flex-direction: column;
+        width: 100vh;
+        padding-left: 240px;
+    }
+    .titleErp{
+        padding-left: 240px;
+    }
+    .blocErp > p{
+        width: 310px;
+    }
+    .imageErp{
+        padding-left: 60px;
+    }
+    .titleCrm{
+        padding-left: 240px;
+    }
+    .blocCrm > p{
+        width: 300px;
+        margin-left: -15px;
+        
+    }
+    .infosCrm{
+        padding: 0;
+    }
+    footer{
+        display: none;
+    }
+}
+@media screen and (max-width: 800px){
+    section{
+        flex-direction: column;
+        width: 100vh;
+        margin: 0;
+        padding-left:230px;
+    }
+    .titleErp{
+        padding-left: 230px;
+    }
+    .blocPratique{
+       padding-left: 0;
+    }
+    .blocErp > p{
+        width: 310px;
+    }
+    .imageErp{
+        padding-left: 60px;
+    }
+    .titleCrm{
+        padding-left: 230px;
+    }
+    .blocCrm > p{
+        width: 300px;
+        margin-left: -15px;
+    }
+}
+@media screen and (max-width: 720px){
+    main{
+        padding-left: 60px;
+    }
+    section{
+        flex-direction: column;
+        width: 100vh;
+        padding-left: 100px;
+    }
+    .titleErp{
+        padding-left: 100px;
+    }
+    .blocErp > p{
+        width: 310px;
+    }
+    .imageErp{
+        padding-left: 60px;
+    }
+    .titleCrm{
+        padding-left: 100px;
+    }
+    .blocCrm > p{
+        padding-left: 10px;
+        width: 300px;
+    }
+}
+@media screen and (max-width: 570px){
+    main{
+        padding-left: 15px;
+    }
+    section{
+        flex-direction: column;
+        width: 100vh;
+    }
+    .blocErp>p{
+        width: 310px;
+    }
+    .titleErp{
+        padding-left: 100px;
+    }
+    section{
+        flex-direction: column;
+        margin: 0;
+    }
+    .blocCrm > p{
+        padding-left: 5px;
+        width: 300px;
+    }
+}
+@media screen and (max-width: 460px){
+    main{
+        padding-left: 0px;
+    }
+    .blocErp>p{
+        width: 310px;
+    }
+    section{
+        flex-direction: column;
+        width: 100vh;
+    }
+    .blocCrm > p{
+        padding-left: 5px;
+        width: 300px;
+    }
+}
+@media screen and (max-width: 430px){
+    main{
+        padding-left: 0px;
+    }
+    .blocErp>p{
+        width: 310px;
+    }
+    section{
+        flex-direction: column;
+        width: 100vh;
+        padding-left: 50px;
+    }
+    .titleCrm,.titleErp{
+        padding-left:50px;
+    }
+    .blocCrm > p{
+        padding-left: 5px;
+        width: 300px;
+    }
+}
+@media screen and (max-width: 360px){
+    
+    .blocErp>p{
+        width: 310px;
+    }
+    section{
+        flex-direction: column;
+        margin: 0;
+    }
+    .blocCrm > p{
+        padding-left: 15px;
+        width: 300px;
+    }
+}
+@media screen and (max-width: 336px){
+    
+    .blocErp>p{
+        width: 270px;
+        padding-left: 10px;
+    }
+    section,.titleErp,.titleCrm{
+        padding-left: 15px;
+    }
+    .imageErp{
+        padding-left: 30px;
+    }
+    .blocPratique{
+        margin-left: 0px;
+    }
+    .imageCrm{
+        padding-left: 40px;
+    }
+    .blocCrm > p{
+        padding-left: 15px;
+        width: 280px;
+    }
+    .blocParagraphePratique{
+        width: 260px;
+    }
+}
